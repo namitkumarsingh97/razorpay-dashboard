@@ -1,7 +1,6 @@
 # Razorpay Dashboard (Assignment)
 
-This project is a **static dashboard UI** built using **React, Vite, Tailwind CSS, and Material UI (MUI)**.  
-The goal was to replicate the given dashboard design with a sidebar, header, cards, and charts — **no navigation or backend functionality** (purely UI).
+This project is a **static dashboard UI** built using **React, Vite, Tailwind CSS, and Material UI (MUI)**.
 
 ---
 
@@ -43,7 +42,7 @@ If `npx tailwindcss init -p` fails, manually run:
 node ./node_modules/tailwindcss/lib/cli.js init
 ```
 
-This creates `tailwind.config.js`.
+This created `tailwind.config.js`.
 
 ---
 
@@ -93,16 +92,27 @@ Inside **`src/index.css`**:
 ```
 razorpay-dashboard/
  ┣ src/
+ ┃ ┣ assets/
+ ┃ ┃ ┣ razorpay_logo.svg
+ ┃ ┃ ┣ razorpay-icon.svg
+ ┃ ┃ ┣ react.svg
+ ┃ ┃ ┗ white.png
  ┃ ┣ components/
- ┃ ┃ ┣ Sidebar.jsx
- ┃ ┃ ┣ Header.jsx
- ┃ ┃ ┣ Card.jsx
- ┃ ┃ ┗ Chart.jsx
+ ┃ ┃ ┗ Dashboard.jsx
  ┃ ┣ App.jsx
- ┃ ┗ index.css
+ ┃ ┣ index.css
+ ┃ ┗ main.jsx
+ ┣ .gitignore
+ ┣ eslint.config.js
+ ┣ image.png
+ ┣ index.html
+ ┣ package-lock.json
  ┣ tailwind.config.js
+ ┣ README.md
  ┣ postcss.config.js
+ ┣ vite.config.js
  ┗ package.json
+
 ```
 
 ---
@@ -110,10 +120,10 @@ razorpay-dashboard/
 ## Features
 
 - Sidebar with static items (Dashboard, Earnings, Customers, Products, Reports, Settings)
-- Top header with search & profile
+- Top header with profile
 - Stats cards (Revenue, Transactions, etc.)
 - Charts using **Recharts**
-- Responsive layout with Tailwind Grid/Flex utilities
+- Responsive layout with Tailwind Grid
 
 ---
 
@@ -125,14 +135,6 @@ npm run dev
 
 Project runs at:  
 `http://localhost:5173`
-
----
-
-## Notes
-
-- This dashboard is **completely static** (no routing or backend).
-- Focus was on **UI replication**, responsiveness, and clean code.
-- Tailwind was configured manually due to issues with `npx tailwindcss init`.
 
 ---
 
