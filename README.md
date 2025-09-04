@@ -136,6 +136,9 @@ npm run dev
 Project runs at:  
 `http://localhost:5173`
 
+Project Deployed Link:
+`https://fantastic-liger-357630.netlify.app`
+
 ---
 
 ## Demo Screenshot
